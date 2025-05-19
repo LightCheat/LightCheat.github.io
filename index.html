@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM-GEN: A Multi-Agent Task Planning Framework for Power Inspection Robots</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LLM-GEN: A Multi-Agent Task Planning Framework for Power Inspection Robots</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              ZongYuan Wang<sup>1</sup>,</span>
+            <span class="author-block">
+              Xin Zhou</a><sup>2</sup>,</span>
+            <span class="author-block">
+              JianLiang Mao</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              ChuanLin Zhang</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Shanghai University of Electric Power</span>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            At present, power inspection robots are capable of accomplishing inspection tasks by manually devising symbolic sequences. Nevertheless, the manual design of repetitive and analogous task sequences is not only laborious but also inefficient. To tackle this challenge, we introduce LLM-GEN, a cutting-edge multi-agent TAMP framework underpinned by LLMs. This framework empowers the autonomous planning and execution of agent operations in power inspection scenarios.</p>
+          <p>
+           LLM-GEN harnesses RAG technology to integrate the knowledge base of power inspection experts with the autonomous reasoning capabilities of large language models. It can independently generate appropriate task sequences for a variety of tasks in power inspection scenarios, including meter status detection, switch pressing operations, and circuit breaker opening and closing. In comparison to our baseline approach, LLM-GEN remarkably enhances the success rate of task generation and broadens the spectrum of adaptable tasks.
+          </p>
+          <p>
+generation and broadens the spectrum of adaptable tasks.
+Moreover, we capitalize on the reasoning prowess of large language models to develop a fault reasoning module. This module can meticulously analyze the causes of task execution failures based on operation logs and facilitates the resumption of tasks from the point of interruption. Experimental validation through actual deployment and implementation on physical robots underscores the practical application value of LLM-GEN in industrial settings.
+          </p>
+        </div>
+        <div class="has-text-centered" style="margin-top: 1em;">
+          <img src="./static/images/re1.png" alt="示例图片" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered mb-6">
+      <h1 class="title is-3">Experiment​​</h1>
+    </div>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-half ">
+        <h2 class="title is-4">Repeat tasks multiple times</h2>
+        <p>We repeatedly execute complex tasks in cycles. The new method demonstrates better task reliability compared with previous approaches.
+        </p>    
+        <video autoplay controls muted loop playsinline style="width:100%">
+          <source src="./static/videos/01.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-half ">
+      <h2 class="title is-4">Tasks involving logic</h2>
+      <p>
+        Tasks involving logical judgment determine which operation to take by assessing the light combinations of the electrical cabinets.
+      </p>
+      <video controls playsinline style="width:100%">   
+          <source src="./static/videos/02.mp4" type="video/mp4">
+      </video>
+        
+      </div>
+      <div class="column is-half ">
+      <h2 class="title is-4">Fault reasoning</h2>
+      <p>A closed-loop feedback mechanism is established to infer the reasons for failures based on operation and maintenance logs and the fault query interface.
+      </p> 
+        <img src="./static/images/插图23.png" alt="图片1" style="max-width:100%;height:auto;">
+      </div>
+      <div class="column is-half ">
+      <h2 class="title is-4">Expert knowledge base</h2>
+      <p>A closed-loop feedback mechanism is established to infer the reasons for failures based on operation and maintenance logs and the fault query interface.
+      </p>
+        <img src="./static/images/插图29.png" alt="图片2" style="max-width:75%;height:auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered mb-6">
+      <h1 class="title is-3">Platform and Architecture</h1>
+    </div>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-full">
+        <!-- 文本两端对齐 -->
+        <p style="text-align: justify; max-width: 800px; margin: 0 auto 1.5rem;">
+          A closed-loop feedback mechanism is established to infer the reasons for failures 
+          based on operation and maintenance logs and the fault query interface.
+        </p>
+        <!-- 图片居中 -->
+        <div class="has-text-centered">
+          <img 
+            src="./static/images/插图25.png" 
+            alt="Platform Architecture Diagram" 
+            style="max-width:70%; height:auto; display:block; margin: 0 auto;"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
